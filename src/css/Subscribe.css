@@ -1,25 +1,11 @@
-@media screen and (min-width:1200px) {
-
-    .subscribe {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1200px;
-        padding: 72px 15px;
-        background-image: url(../img/subcribe-desktop@1x.jpg);
-    }
-
-    .subscribe-title {
-        font-size: 24px;
-        line-height: 1.17;
-    }
-}
-
 .subscribe {
     margin-right: auto;
     margin-left: auto;
-    max-width: 1200px;
-    padding: 72px 15px;
-    background-image: url(../img/subcribe-desktop@1x.jpg);
+    padding: 63px 20px;
+    background-image: url(../img/subcribe-mobile@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .subscribe-container {
@@ -29,6 +15,9 @@
 }
 
 .subscribe-title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -39,10 +28,65 @@
 }
 
 .subscribe-subtitle {
+    margin-bottom: 24px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
     letter-spacing: -0.02em;
     color: var(--white);
+}
+
+.subscribe-btn {
+    display: block;
+    padding: 12px 28px;
+    color: var(--white);
+    background-color: var(--orange);
+    border-color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    color: var(--orange);
+    background-color: var(--pale-yellow);
+}
+
+/* ------------TABLET--------------- */
+
+@media screen and (min-width:768px) {
+    .subscribe {
+        padding: 72px 150px;
+        background-image: url(../img/subcribe-tablet@1x.jpg);
+    }
+
+    .subscribe-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    .subscribe-btn {
+        padding: 14px 40px;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+/* ------------DESKTOP---------------*/
+
+@media screen and (min-width:1200px) {
+
+    .subscribe {
+        max-width: 1200px;
+        padding: 72px 366px;
+        background-image: url(../img/subcribe-desktop@1x.jpg);
+    }
+
+    .subscribe-title {
+        width: 250px;
+        font-size: 24px;
+        line-height: 1.17;
+    }
 }
