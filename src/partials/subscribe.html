@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/base.css" />
+    <!-- <link rel="stylesheet" href="../css/#.css" /> -->
+    <link rel="stylesheet" href="../css/Subscribe.css" />
+  </head>
+  <body>
+    <!-- Subscribe -->
+
+    <section class="subscribe section">
+      <div class="subscribe-container">
+        <h2 class="subscribe-title">Explore our new chocolate first</h2>
+        <p class="subscribe-subtitle">
+          From the velvety texture to the rich and complex flavor, our New
+          Chocolate is a true indulgence that will leave you craving more. Made
+          with only the finest ingredients and handcrafted with the utmost care,
+          each piece is a work of art that is sure to please.
+        </p>
+        <button type="button" class="subscribe-btn" data-modal-open>
+          Subscribe
+        </button>
+      </div>
+    </section>
+
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="subscribe-modal">
+        <button type="button" class="subscribe-modal-btn" data-modal-close>
+          X
+        </button>
+        <img
+          srcset="
+            ../img/pop-up-mobile@1x.jpg 1x,
+            ../img/pop-up-mobile@2x.jpg 2x
+          "
+          src="../img/pop-up-mobile@1x.jpg"
+          alt="chocolate"
+          class="subscribe-modal-img"
+        />
+        <div class="subscribe-modal-content">
+          <h2>Explore our new chocolate first</h2>
+          <form class="subscribe-modal-form">
+            <input
+              type="email"
+              name="email"
+              id="subscribe-modal-email"
+              placeholder="Enter your E-mail"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-modal-open]'),
+          closeModalBtn: document.querySelector('[data-modal-close]'),
+          modal: document.querySelector('[data-modal]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+    </script>
+  </body>
+</html>
