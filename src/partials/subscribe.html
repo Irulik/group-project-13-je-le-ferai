@@ -1,5 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/#.css" />
     <link rel="stylesheet" href="../css/Subscribe.css" />
@@ -24,57 +29,5 @@
     </section>
 
     <!-- modal -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="subscribe-modal">
-        <button type="button" class="subscribe-modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="12" height="12">
-            <use href="../img/icons/symbol-defs.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <!-- <img
-          srcset="
-            ../img/pop-up-mobile@1x.jpg 1x,
-            ../img/pop-up-mobile@2x.jpg 2x
-          "
-          src="../img/pop-up-mobile@1x.jpg"
-          alt="chocolate"
-          class="subscribe-modal-img"
-        /> -->
-        <div class="subscribe-modal-content">
-          <h2 class="subscribe-modal-title">
-            Explore our <br /><span>new chocolate</span> first
-          </h2>
-          <form class="subscribe-modal-form">
-            <input
-              type="email"
-              name="email"
-              id="subscribe-modal-email"
-              placeholder="Enter your E-mail"
-              class="subscribe-modal-form-input"
-            />
-            <button type="submit" class="subscribe-modal-form-btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector('[data-modal-open]'),
-          closeModalBtn: document.querySelector('[data-modal-close]'),
-          modal: document.querySelector('[data-modal]'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-          refs.modal.classList.toggle('is-hidden');
-        }
-      })();
-    </script>
   </body>
 </html>
