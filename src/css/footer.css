@@ -57,8 +57,7 @@
     margin-right: auto;
   }
   .footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 32px;
   }
   .footer-anchor-list {
     display: flex;
@@ -103,8 +102,7 @@
     margin-right: auto;
   }
   .footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 32px;
   }
   .footer-pagination {
     display: flex;
