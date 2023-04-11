@@ -48,8 +48,8 @@
   }
   .modal-close-btn-icon {
     stroke: var(--black);
-    width: 24px;
-    height: 24px;
+    width: 12px;
+    height: 12px;
   }           
   
   .modal-title {
@@ -213,8 +213,8 @@
       right: 24px;
     }
     .modal-close-btn-icon {
-      width: 28px;
-      height: 28px;
+      width: 14px;
+      height: 14px;
     }           
     
     
@@ -276,6 +276,10 @@
       }
   
       .form-flag {
+        display: flex;
+        align-items: center;
+        padding: 3.5px 0;
+
         gap: 18px;
         border-right: 1.5px solid rgba(0, 0, 0, 0.1);
         box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
